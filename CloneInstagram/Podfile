@@ -1,0 +1,32 @@
+# definir la version de los pods
+platform :ios, '13.0'
+# que los pods Sean de tipo framework
+use_frameworks!
+# ocultar los warning de los pods
+inhibit_all_warnings!
+# declarar el archivo de proyectos (archivo en blanco)
+workspace 'Instagram'
+
+# declarar una constantes de varios pods
+def networking
+  pod 'Alamofire'
+end
+
+def database
+  pod 'RealmSwift'
+end
+
+# declarar los targets, los proyectos que haya en mi app
+target 'Instragram' do
+  project 'App/Instragram'
+  
+  networking
+  database
+end
+
+# framework de components
+target 'Components' do
+  project 'Components/Components/Components'
+  
+  networking
+end

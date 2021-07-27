@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:App"
+      name = "App">
+      <FileRef
+         location = "group:Instragram.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Components"
+      name = "Components">
+      <FileRef
+         location = "group:Utils/Utils.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Components/Components.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
