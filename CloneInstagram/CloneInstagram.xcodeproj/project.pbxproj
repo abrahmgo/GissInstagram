@@ -15,6 +15,11 @@
 		B63E512826AF9C4500FB38FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63E512626AF9C4500FB38FF /* LaunchScreen.storyboard */; };
 		B63E513326AF9C4500FB38FF /* CloneInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E513226AF9C4500FB38FF /* CloneInstagramTests.swift */; };
 		B63E513E26AF9C4600FB38FF /* CloneInstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E513D26AF9C4600FB38FF /* CloneInstagramUITests.swift */; };
+		B6B4C66026AFA4F00012C9B4 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4C65F26AFA4F00012C9B4 /* Persona.swift */; };
+		B6B4C66226AFA6D30012C9B4 /* Men.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4C66126AFA6D30012C9B4 /* Men.swift */; };
+		B6B4C66426AFAC550012C9B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4C66326AFAC550012C9B4 /* Constants.swift */; };
+		B6B4C66626AFB00E0012C9B4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4C66526AFB00E0012C9B4 /* Data.swift */; };
+		B6B4C66926AFB75A0012C9B4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4C66826AFB75A0012C9B4 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		B63E513926AF9C4600FB38FF /* CloneInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloneInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63E513D26AF9C4600FB38FF /* CloneInstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneInstagramUITests.swift; sourceTree = "<group>"; };
 		B63E513F26AF9C4600FB38FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B4C65F26AFA4F00012C9B4 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		B6B4C66126AFA6D30012C9B4 /* Men.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Men.swift; sourceTree = "<group>"; };
+		B6B4C66326AFAC550012C9B4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6B4C66526AFB00E0012C9B4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B6B4C66826AFB75A0012C9B4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		B63E511726AF9C4500FB38FF /* CloneInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				B6B4C65E26AFA4C10012C9B4 /* Entities */,
 				B63E511826AF9C4500FB38FF /* AppDelegate.swift */,
 				B63E511C26AF9C4500FB38FF /* ViewController.swift */,
 				B63E511E26AF9C4500FB38FF /* Main.storyboard */,
@@ -106,6 +117,7 @@
 				B63E512626AF9C4500FB38FF /* LaunchScreen.storyboard */,
 				B63E512926AF9C4500FB38FF /* Info.plist */,
 				B63E512126AF9C4500FB38FF /* CloneInstagram.xcdatamodeld */,
+				B6B4C66326AFAC550012C9B4 /* Constants.swift */,
 			);
 			path = CloneInstagram;
 			sourceTree = "<group>";
@@ -126,6 +138,17 @@
 				B63E513F26AF9C4600FB38FF /* Info.plist */,
 			);
 			path = CloneInstagramUITests;
+			sourceTree = "<group>";
+		};
+		B6B4C65E26AFA4C10012C9B4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B6B4C65F26AFA4F00012C9B4 /* Persona.swift */,
+				B6B4C66126AFA6D30012C9B4 /* Men.swift */,
+				B6B4C66526AFB00E0012C9B4 /* Data.swift */,
+				B6B4C66826AFB75A0012C9B4 /* Car.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B4C66626AFB00E0012C9B4 /* Data.swift in Sources */,
+				B6B4C66226AFA6D30012C9B4 /* Men.swift in Sources */,
+				B6B4C66926AFB75A0012C9B4 /* Car.swift in Sources */,
+				B6B4C66026AFA4F00012C9B4 /* Persona.swift in Sources */,
 				B63E511D26AF9C4500FB38FF /* ViewController.swift in Sources */,
 				B63E511926AF9C4500FB38FF /* AppDelegate.swift in Sources */,
 				B63E512326AF9C4500FB38FF /* CloneInstagram.xcdatamodeld in Sources */,
+				B6B4C66426AFAC550012C9B4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
