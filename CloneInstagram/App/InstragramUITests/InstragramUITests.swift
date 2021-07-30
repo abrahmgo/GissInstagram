@@ -1,13 +1,13 @@
 //
-//  CloneInstagramUITests.swift
-//  CloneInstagramUITests
+//  InstragramUITests.swift
+//  InstragramUITests
 //
-//  Created by Andrés Bonilla Gómez on 26/07/21.
+//  Created by Andrés Bonilla Gómez on 04/08/21.
 //
 
 import XCTest
 
-class CloneInstagramUITests: XCTestCase {
+class InstragramUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

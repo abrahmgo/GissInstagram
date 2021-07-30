@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         
         showPersons()
         protocols()
+        
+        navigationController?.title = ""
     }
     
     func showPersons() {
