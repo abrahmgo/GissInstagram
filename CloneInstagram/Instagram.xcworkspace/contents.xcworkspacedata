@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:App"
+      name = "App">
+      <FileRef
+         location = "group:CloneInstagram">
+      </FileRef>
+      <FileRef
+         location = "group:CloneInstagramTests">
+      </FileRef>
+      <FileRef
+         location = "group:CloneInstagramUITests">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../../../Desktop/App/CloneInstagram.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Components"
+      name = "Components">
+      <FileRef
+         location = "group:Components/Components.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
