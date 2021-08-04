@@ -22,7 +22,11 @@ struct Persona {
     }
 }
 
-enum Gender: String {
-    case female = "Woman"
-    case men = "Men"
+enum Gender: CaseIterable {
+    static var allCases: [Gender] {
+            return [.female, .men, .other]
+        }
+    case female
+    case men
+    case other
 }
