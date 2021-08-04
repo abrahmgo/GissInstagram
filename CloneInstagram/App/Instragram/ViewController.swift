@@ -21,12 +21,14 @@ class ViewController: UIViewController {
     func showPersons() {
         
         var arrayPersons: [Persona] = []
+        
         // traditional
-        for _ in 0..<100 {
-            arrayPersons.append(Persona(age: 213, gender: .female))
+        for age in 0..<100 {
+            for generoAleatorio in Gender.allCases {
+                print("Edad de la persona : \(age) Genero de la persona:\(generoAleatorio).")
+            }
         }
         print(arrayPersons.first?.age)
-        print(arrayPersons.first?.gender.rawValue)
         // 213
         
         // high order
@@ -117,7 +119,72 @@ class ViewController: UIViewController {
         numers = numers + 10
         numers += 10
         
-        // 
+        //RETOS:
+        
+        //FLATMAP
+        newArrayPersons = newArrayPersons.flatMap({
+            return Persona(age: $0.age / 2, gender: .female)
+        })
+        //Se agrega al array un nuevo objeto que tiene una edad de 200
+        arrayMen.append(Men(age: 200))
+        
+        //REDUCE
+        let arrayNums = [1,5,9,2,4,5]
+        
+//        let result = arrayNums.reduce(0, {runningSum, value in
+//            runningSum + value
+//        })
+        
+        let result = arrayNums.reduce(0, +)
+        
+        print("La suma del arreglo es: \(result)")
+        
+        //Intentará castear el valor a un tipo String con el as?
+        let objectArray = 65 as Any
+        print(objectArray as? String)
+        
+        if let objectAsString = objectArray as? String {
+            print("\(objectAsString) El dato si se pudo convertir a String")
+        } else{
+            print("El dato no se pudo convertir a String")
+        }
+        
+        //Validación de que un Objeto de tipo Any es de tipo Persona
+        let objectPerson = Persona(age: 25, gender: .men) as Any
+        
+        if let objectAsPerson = objectPerson as? Persona{
+            print("El objeto es de tipo Persona")
+        } else{
+            print("El objeto NO es de tipo Persona")
+        }
+        
+        //CONCATENACIÓN
+        let name = "Gissel"
+        let lastName = "Santiago"
+        
+        let option1 = name + lastName
+        let option2 = "\(name) \(lastName) \n"
+        let option3 = name + " " + lastName
+        
+        print(option1)
+        print(option2)
+        print(option3)
+        
+        //Mark: Tarea
+        var groupPerson2: [Persona] = []
+        //Rango de edad y genero aleatorio
+        
+//        func createGender(rawValue: Gender) -> Gender {
+//            if let testVal = Gender(rawValue: rawValue.rawValue) {
+//                    return testVal
+//                }
+//                else{
+//                    return .other
+//                }
+//            }
+        
+        let number = Int.random(in: 0..<70)
+        
     }
     
     
@@ -139,4 +206,9 @@ class ViewController: UIViewController {
     func getNewCar(car: Car) {
         dump(car)
     }
+    
+    var pet1 = Pet(name: "Luigi", race: .frenchPoodle, age: 11, owner: .gissel)
+    var pet2 = Pet(name: "Kimora", race: .cocker, age: 12, owner: .fernanda)
+    var pet3 = Pet(name: "Kira", race: .dalmata, age: 2, owner: .jocelyn)
+    var pet4 = Pet(name: "Princesa", race: .chihuahua, age: 3, owner: .gissel)
 }
