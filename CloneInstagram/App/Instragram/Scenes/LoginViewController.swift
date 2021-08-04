@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func goToNextViewController(_ sender: Any) {
         
+        let tableViewController = TableViewController()
+        navigationController?.pushViewController(tableViewController, animated: true)
         print("go to other view controller")
     }
 }

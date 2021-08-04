@@ -24,6 +24,11 @@
 		B659164526BA5AE500E4D981 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; };
 		B659164626BA5AE500E4D981 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B659164926BA5B7D00E4D981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659164826BA5B7D00E4D981 /* ViewController.swift */; };
+		B6DF1EC026BA612100633EAB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EBE26BA612100633EAB /* TableViewController.swift */; };
+		B6DF1EC126BA612100633EAB /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DF1EBF26BA612100633EAB /* TableViewController.xib */; };
+		B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */; };
+		B6DF1EC626BA618C00633EAB /* TableViewCellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */; };
+		B6DF1EC826BA61A600633EAB /* TableViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		B659164026BA59EB00E4D981 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B659164426BA5AE500E4D981 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B659164826BA5B7D00E4D981 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6DF1EBE26BA612100633EAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B6DF1EBF26BA612100633EAB /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellTitle.xib; sourceTree = "<group>"; };
+		B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellTitle.swift; sourceTree = "<group>"; };
+		B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 		B659162E26BA59C500E4D981 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B6DF1EC226BA618400633EAB /* Cells */,
 				B659162F26BA59C500E4D981 /* Views */,
 			);
 			path = Components;
@@ -204,6 +215,9 @@
 			children = (
 				B659164026BA59EB00E4D981 /* LoginViewController.swift */,
 				B659163F26BA59EB00E4D981 /* LoginViewController.xib */,
+				B6DF1EBE26BA612100633EAB /* TableViewController.swift */,
+				B6DF1EBF26BA612100633EAB /* TableViewController.xib */,
+				B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -214,6 +228,15 @@
 				B659164426BA5AE500E4D981 /* Components.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6DF1EC226BA618400633EAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */,
+				B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +346,8 @@
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
 				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
+				B6DF1EC126BA612100633EAB /* TableViewController.xib in Resources */,
+				B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +376,14 @@
 				B659163D26BA59CE00E4D981 /* Men.swift in Sources */,
 				B659163A26BA59CE00E4D981 /* Data.swift in Sources */,
 				B659163126BA59C500E4D981 /* Circle.swift in Sources */,
+				B6DF1EC626BA618C00633EAB /* TableViewCellTitle.swift in Sources */,
 				B659163B26BA59CE00E4D981 /* Car.swift in Sources */,
 				B659163C26BA59CE00E4D981 /* Persona.swift in Sources */,
+				B6DF1EC026BA612100633EAB /* TableViewController.swift in Sources */,
 				B61B1FE026BA5960007EF5D9 /* AppDelegate.swift in Sources */,
 				B61B1FEA26BA5960007EF5D9 /* Instragram.xcdatamodeld in Sources */,
 				B659163926BA59CE00E4D981 /* Constants.swift in Sources */,
+				B6DF1EC826BA61A600633EAB /* TableViewController+TableViewDelegate.swift in Sources */,
 				B659164226BA59EB00E4D981 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
