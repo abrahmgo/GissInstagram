@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Utils
 
 class LoginViewController: UIViewController {
 
@@ -18,6 +19,17 @@ class LoginViewController: UIViewController {
         
         let tableViewController = TableViewController()
         navigationController?.pushViewController(tableViewController, animated: true)
-        print("go to other view controller")
+        print("go to other view controller".capitalized())
     }
 }
+
+
+/*
+ 
+ hacer uso de nuke
+ investigar como cargar una imagen desde internet y mostrarla en una imageView
+ 
+ implementar ya sea con cocoapods o packege manager Lottie de Airbnb
+ investigar como cargar un lottie en un viewcontroller y mostrarlo
+ 
+ */
