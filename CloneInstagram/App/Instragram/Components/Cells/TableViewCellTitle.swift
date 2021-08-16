@@ -15,6 +15,7 @@ class TableViewCellTitle: UITableViewCell {
     //viewdidload
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
         
         // Initialization code
         //configurar tipo letra, tamaño, color, cosas asi

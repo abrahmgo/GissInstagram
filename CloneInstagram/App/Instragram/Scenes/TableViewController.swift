@@ -23,6 +23,15 @@ class TableViewController: UIViewController {
         
 //        tableView.register(TableViewCellTitle.self, forCellReuseIdentifier: "CustomTableViewCell")
         tableView.register(UINib(nibName: "TableViewCellTitle", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+        // release 3
+        
+        // buscar la forma de quitar el borde
+        tableView.separatorStyle = .none
+       
+        // buscar la forma de quitar lo gris
+        //tableView.allowsSelection = false
+        //tableView.backgroundColor = .white
+        
     }
 }
 
@@ -46,8 +55,6 @@ extension TableViewController: UITableViewDataSource {
 // release 3
 // buscar la forma de quitar lo gris
 // buscar la forma de quitar el borde
-
-
 // master -> solo app
 // examples -> todo lo que veamos, ejercisios
 
