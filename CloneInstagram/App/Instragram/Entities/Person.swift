@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Persona {
+struct Person {
     
     let age: Int
     let gender: Gender
@@ -29,4 +29,17 @@ enum Gender: CaseIterable {
     case female
     case men
     case other
+}
+
+class Dog {
+    
+    let name: String
+    let age: Int
+    let size: String
+    
+    init(name: String = "Luigi", age: Int, size: String) {
+        self.name = name
+        self.age = age
+        self.size = size
+    }
 }

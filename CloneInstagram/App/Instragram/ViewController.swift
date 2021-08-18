@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     func showPersons() {
         
-        var arrayPersons: [Persona] = []
+        var arrayPersons: [Person] = []
         
         // traditional
         for age in 0..<100 {
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         // age - 25 - 50
         // gender
         
-        var newArrayPersons = Array(repeating: Persona(age: 12, gender: .female), count: 100)
+        var newArrayPersons = Array(repeating: Person(age: 12, gender: .female), count: 100)
         print(newArrayPersons.first?.age)
         // 12
         
@@ -74,12 +74,12 @@ class ViewController: UIViewController {
         
         // Dictionary
         
-        var dictionary: [String: Persona] = [:]
-        dictionary["data"] = Persona(age: 12, gender: .female)
+        var dictionary: [String: Person] = [:]
+        dictionary["data"] = Person(age: 12, gender: .female)
         
         print(dictionary.keys)
         
-        Data(person: dictionary["data"] ?? Persona(age: 12, gender: .men))
+        Data(person: dictionary["data"] ?? Person(age: 12, gender: .men))
         
         let values = dictionary.values
         
@@ -90,15 +90,15 @@ class ViewController: UIViewController {
         let cadenaInt = Int(cadena)
         
         // Any
-        let objectAny = Persona(age: 12, gender: .female) as Any
+        let objectAny = Person(age: 12, gender: .female) as Any
         
-        if let objectString = objectAny as? Persona {
+        if let objectString = objectAny as? Person {
             print(objectString)
         } else {
             print("no es un string")
         }
         
-        guard (objectAny as? Persona) != nil else {
+        guard (objectAny as? Person) != nil else {
             return
         }
         
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
         
         //FLATMAP
         newArrayPersons = newArrayPersons.flatMap({
-            return Persona(age: $0.age / 2, gender: .female)
+            return Person(age: $0.age / 2, gender: .female)
         })
         //Se agrega al array un nuevo objeto que tiene una edad de 200
         arrayMen.append(Men(age: 200))
@@ -150,9 +150,9 @@ class ViewController: UIViewController {
         }
         
         //Validación de que un Objeto de tipo Any es de tipo Persona
-        let objectPerson = Persona(age: 25, gender: .men) as Any
+        let objectPerson = Person(age: 25, gender: .men) as Any
         
-        if let objectAsPerson = objectPerson as? Persona{
+        if let objectAsPerson = objectPerson as? Person{
             print("El objeto es de tipo Persona")
         } else{
             print("El objeto NO es de tipo Persona")
@@ -171,7 +171,7 @@ class ViewController: UIViewController {
         print(option3)
         
         //Mark: Tarea
-        var groupPerson2: [Persona] = []
+        var groupPerson2: [Person] = []
         //Rango de edad y genero aleatorio
         
 //        func createGender(rawValue: Gender) -> Gender {

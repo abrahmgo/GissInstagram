@@ -13,7 +13,7 @@
 		A749884326BCD960007F0548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163326BA59CE00E4D981 /* Constants.swift */; };
 		A749884426BCD963007F0548 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163526BA59CE00E4D981 /* Data.swift */; };
 		A749884526BCD966007F0548 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163626BA59CE00E4D981 /* Car.swift */; };
-		A749884626BCD968007F0548 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163726BA59CE00E4D981 /* Persona.swift */; };
+		A749884626BCD968007F0548 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163726BA59CE00E4D981 /* Person.swift */; };
 		A749884726BCD96B007F0548 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6647B5926BA5ECD001D6361 /* Pet.swift */; };
 		A749884826BCD96E007F0548 /* Men.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163826BA59CE00E4D981 /* Men.swift */; };
 		A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */; };
@@ -23,6 +23,9 @@
 		A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FE826BA5960007EF5D9 /* Instragram.xcdatamodeld */; };
 		A749885926BCDA78007F0548 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749885826BCDA78007F0548 /* TableViewController.swift */; };
 		A749885B26BCDAC3007F0548 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A749885A26BCDAC3007F0548 /* TableViewController.xib */; };
+		A7CCA7FB26CCB65F00048161 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CCA7FA26CCB65F00048161 /* Utils.framework */; };
+		A7CCA7FC26CCB65F00048161 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7CCA7FA26CCB65F00048161 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7CCA7FE26CCB69700048161 /* GissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCA7FD26CCB69700048161 /* GissViewController.swift */; };
 		B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */; };
 		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
@@ -31,8 +34,6 @@
 		B659164526BA5AE500E4D981 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; };
 		B659164626BA5AE500E4D981 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6DD44F826C615680007E2EB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B6DD44F726C615680007E2EB /* Nuke */; };
-		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
-		B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */,
+				A7CCA7FC26CCB65F00048161 /* Utils.framework in Embed Frameworks */,
 				B659164626BA5AE500E4D981 /* Components.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -75,6 +76,8 @@
 		A749885526BCDA09007F0548 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A749885826BCDA78007F0548 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A749885A26BCDAC3007F0548 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		A7CCA7FA26CCB65F00048161 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7CCA7FD26CCB69700048161 /* GissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GissViewController.swift; sourceTree = "<group>"; };
 		B61B1FDC26BA5960007EF5D9 /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instragram.xcdatamodel; sourceTree = "<group>"; };
@@ -91,7 +94,7 @@
 		B659163326BA59CE00E4D981 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B659163526BA59CE00E4D981 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B659163626BA59CE00E4D981 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		B659163726BA59CE00E4D981 /* Persona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		B659163726BA59CE00E4D981 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B659163826BA59CE00E4D981 /* Men.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Men.swift; sourceTree = "<group>"; };
 		B659163F26BA59EB00E4D981 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B659164026BA59EB00E4D981 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */,
+				A7CCA7FB26CCB65F00048161 /* Utils.framework in Frameworks */,
 				B6DD44F826C615680007E2EB /* Nuke in Frameworks */,
 				B659164526BA5AE500E4D981 /* Components.framework in Frameworks */,
 				4BCAB1448A17A4E77729B9A1 /* Pods_Instragram.framework in Frameworks */,
@@ -242,7 +245,7 @@
 			children = (
 				B659163526BA59CE00E4D981 /* Data.swift */,
 				B659163626BA59CE00E4D981 /* Car.swift */,
-				B659163726BA59CE00E4D981 /* Persona.swift */,
+				B659163726BA59CE00E4D981 /* Person.swift */,
 				B6647B5926BA5ECD001D6361 /* Pet.swift */,
 				B659163826BA59CE00E4D981 /* Men.swift */,
 			);
@@ -257,6 +260,7 @@
 				B659164026BA59EB00E4D981 /* LoginViewController.swift */,
 				B659163F26BA59EB00E4D981 /* LoginViewController.xib */,
 				B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */,
+				A7CCA7FD26CCB69700048161 /* GissViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -264,6 +268,7 @@
 		B659164326BA5AE500E4D981 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7CCA7FA26CCB65F00048161 /* Utils.framework */,
 				B6DD451026C617BD0007E2EB /* Utils.framework */,
 				A749885526BCDA09007F0548 /* XCTest.framework */,
 				B659164426BA5AE500E4D981 /* Components.framework */,
@@ -467,11 +472,12 @@
 				A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */,
 				A749884D26BCD981007F0548 /* ViewController.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
+				A7CCA7FE26CCB69700048161 /* GissViewController.swift in Sources */,
 				A749884B26BCD977007F0548 /* Circle.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
 				A749884826BCD96E007F0548 /* Men.swift in Sources */,
 				A749884726BCD96B007F0548 /* Pet.swift in Sources */,
-				A749884626BCD968007F0548 /* Persona.swift in Sources */,
+				A749884626BCD968007F0548 /* Person.swift in Sources */,
 				A749884526BCD966007F0548 /* Car.swift in Sources */,
 				A749885926BCDA78007F0548 /* TableViewController.swift in Sources */,
 				A749884426BCD963007F0548 /* Data.swift in Sources */,

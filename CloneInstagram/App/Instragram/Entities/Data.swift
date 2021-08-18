@@ -9,9 +9,9 @@ import Foundation
 
 struct Data {
     
-    let person: Persona
+    let person: Person
     
-    init(person: Persona) {
+    init(person: Person) {
         self.person = person
     }
 }
