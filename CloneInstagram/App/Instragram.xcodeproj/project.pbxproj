@@ -27,9 +27,13 @@
 		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
 		B61B200526BA5961007EF5D9 /* InstragramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B200426BA5961007EF5D9 /* InstragramUITests.swift */; };
+		B61D014D26CF64C600364E4C /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D014C26CF64C600364E4C /* RealmData.swift */; };
 		B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B659163F26BA59EB00E4D981 /* LoginViewController.xib */; };
 		B659164526BA5AE500E4D981 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; };
 		B659164626BA5AE500E4D981 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675E08026CF4D24003761A2 /* DefaultLocalData.swift */; };
+		B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B675E08426CF562F003761A2 /* InstagramModel.xcdatamodeld */; };
+		B675E08826CF57A4003761A2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675E08726CF57A4003761A2 /* CoreData.swift */; };
 		B6DD44F826C615680007E2EB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B6DD44F726C615680007E2EB /* Nuke */; };
 		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
 		B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -87,6 +91,7 @@
 		B61B200026BA5961007EF5D9 /* InstragramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstragramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B200426BA5961007EF5D9 /* InstragramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramUITests.swift; sourceTree = "<group>"; };
 		B61B200626BA5961007EF5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61D014C26CF64C600364E4C /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		B659163026BA59C500E4D981 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		B659163326BA59CE00E4D981 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B659163526BA59CE00E4D981 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -98,6 +103,9 @@
 		B659164426BA5AE500E4D981 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B659164826BA5B7D00E4D981 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6647B5926BA5ECD001D6361 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		B675E08026CF4D24003761A2 /* DefaultLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocalData.swift; sourceTree = "<group>"; };
+		B675E08526CF562F003761A2 /* Persons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Persons.xcdatamodel; sourceTree = "<group>"; };
+		B675E08726CF57A4003761A2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		B6DD451026C617BD0007E2EB /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DF1EBE26BA612100633EAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B6DF1EBF26BA612100633EAB /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +188,9 @@
 		B61B1FDE26BA5960007EF5D9 /* Instragram */ = {
 			isa = PBXGroup;
 			children = (
+				B675E08326CF55A9003761A2 /* Realm */,
+				B675E08226CF551A003761A2 /* CoreData */,
+				B675E07F26CF4CF8003761A2 /* UserDefaults */,
 				B659163E26BA59DD00E4D981 /* Scenes */,
 				B659163226BA59CE00E4D981 /* Constants */,
 				B659163426BA59CE00E4D981 /* Entities */,
@@ -270,6 +281,31 @@
 				8FF48733678AB27624360B33 /* Pods_Instragram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B675E07F26CF4CF8003761A2 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B675E08026CF4D24003761A2 /* DefaultLocalData.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		B675E08226CF551A003761A2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B675E08426CF562F003761A2 /* InstagramModel.xcdatamodeld */,
+				B675E08726CF57A4003761A2 /* CoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B675E08326CF55A9003761A2 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				B61D014C26CF64C600364E4C /* RealmData.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		B6DF1EC226BA618400633EAB /* Cells */ = {
@@ -466,12 +502,16 @@
 			files = (
 				A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */,
 				A749884D26BCD981007F0548 /* ViewController.swift in Sources */,
+				B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */,
+				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
 				A749884B26BCD977007F0548 /* Circle.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
+				B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */,
 				A749884826BCD96E007F0548 /* Men.swift in Sources */,
 				A749884726BCD96B007F0548 /* Pet.swift in Sources */,
 				A749884626BCD968007F0548 /* Persona.swift in Sources */,
+				B61D014D26CF64C600364E4C /* RealmData.swift in Sources */,
 				A749884526BCD966007F0548 /* Car.swift in Sources */,
 				A749885926BCDA78007F0548 /* TableViewController.swift in Sources */,
 				A749884426BCD963007F0548 /* Data.swift in Sources */,
@@ -828,6 +868,16 @@
 			);
 			currentVersion = B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */;
 			path = Instragram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B675E08426CF562F003761A2 /* InstagramModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B675E08526CF562F003761A2 /* Persons.xcdatamodel */,
+			);
+			currentVersion = B675E08526CF562F003761A2 /* Persons.xcdatamodel */;
+			path = InstagramModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

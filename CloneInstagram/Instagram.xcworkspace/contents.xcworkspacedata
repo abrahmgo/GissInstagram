@@ -12,7 +12,13 @@
       location = "group:Components"
       name = "Components">
       <FileRef
+         location = "group:Utils/Utils.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Components/Components.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -12,11 +12,16 @@ def networking
   pod 'Alamofire'
 end
 
+def database
+  pod 'RealmSwift'
+end
+
 # declarar los targets, los proyectos que haya en mi app
 target 'Instragram' do
   project 'App/Instragram'
   
   networking
+  database
 end
 
 # framework de components
