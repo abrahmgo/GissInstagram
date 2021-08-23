@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,28 +27,52 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsQ-zA-yph">
-                    <rect key="frame" x="115" y="681" width="185" height="30"/>
+                    <rect key="frame" x="86" y="486" width="242" height="30"/>
+                    <color key="tintColor" name="AccentColor"/>
                     <state key="normal" title="Go To Next View Controller"/>
                     <connections>
                         <action selector="goToNextViewController:" destination="-1" eventType="touchUpInside" id="2yg-K2-nWL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsz-VO-sTD">
+                    <rect key="frame" x="86" y="566" width="242" height="30"/>
+                    <state key="normal" title="Go to bear animation for Lottie"/>
+                    <connections>
+                        <action selector="goToAnimationBear:" destination="-1" eventType="touchUpInside" id="2gs-Y2-2C5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAE-K5-Kzd">
+                    <rect key="frame" x="146" y="646" width="123" height="30"/>
+                    <state key="normal" title="Go to image Nuke"/>
+                    <connections>
+                        <action selector="goToImageNuke:" destination="-1" eventType="touchUpInside" id="JOk-AB-dlG"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TsQ-zA-yph" secondAttribute="trailing" constant="114" id="5GK-W2-de2"/>
-                <constraint firstItem="TsQ-zA-yph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="115" id="6DU-xU-Aa8"/>
                 <constraint firstItem="8Tk-qo-MOf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7mE-6x-XfC"/>
                 <constraint firstItem="8Tk-qo-MOf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="260" id="AxG-lS-dsr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TsQ-zA-yph" secondAttribute="bottom" constant="151" id="Mff-Dj-3w0"/>
-                <constraint firstItem="TsQ-zA-yph" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Tk-qo-MOf" secondAttribute="bottom" constant="174" id="jxM-sU-RQZ"/>
+                <constraint firstItem="TsQ-zA-yph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="86" id="FNQ-yk-NXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TsQ-zA-yph" secondAttribute="trailing" constant="86" id="Jj5-C4-Crp"/>
+                <constraint firstItem="Xsz-VO-sTD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="86" id="M1o-Hy-xV3"/>
+                <constraint firstItem="Xsz-VO-sTD" firstAttribute="top" secondItem="TsQ-zA-yph" secondAttribute="bottom" constant="50" id="RdK-jz-Ibg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xsz-VO-sTD" secondAttribute="trailing" constant="86" id="UtY-Tr-pCv"/>
+                <constraint firstItem="eAE-K5-Kzd" firstAttribute="top" secondItem="Xsz-VO-sTD" secondAttribute="bottom" constant="50" id="YO0-ZB-Gas"/>
+                <constraint firstItem="eAE-K5-Kzd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="146" id="gqs-tI-J52"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eAE-K5-Kzd" secondAttribute="bottom" constant="186" id="hzw-iA-lRg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eAE-K5-Kzd" secondAttribute="trailing" constant="145" id="kYV-3U-fcY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Tk-qo-MOf" secondAttribute="trailing" constant="20" id="lyd-A1-oYD"/>
+                <constraint firstItem="TsQ-zA-yph" firstAttribute="top" secondItem="8Tk-qo-MOf" secondAttribute="bottom" constant="121" id="v9g-cz-zRl"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

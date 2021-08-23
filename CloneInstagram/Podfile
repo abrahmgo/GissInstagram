@@ -16,12 +16,17 @@ def database
   pod 'RealmSwift'
 end
 
+def lottie
+  pod 'lottie-ios'
+end
+
 # declarar los targets, los proyectos que haya en mi app
 target 'Instragram' do
   project 'App/Instragram'
   
   networking
   database
+  lottie
 end
 
 # framework de components

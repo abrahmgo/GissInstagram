@@ -23,8 +23,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func goToNextViewController(_ sender: Any) {
         
-        let tableViewController = TableViewController()
-        navigationController?.pushViewController(tableViewController, animated: true)
+        let gisselViewController = GisselViewController()
+        navigationController?.pushViewController(gisselViewController, animated: true)
         print("go to other view controller".capitalized())
         
         RealmData.shared.write()
@@ -32,6 +32,18 @@ class LoginViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             RealmData.shared.read()
         }
+    }
+    
+    @IBAction func goToAnimationBear(_ sender: UIButton) {
+        let bearAnimation = BearLottieViewController()
+        navigationController?.pushViewController(bearAnimation, animated: true)
+        print("go to animation Bear for Lottie".capitalized())
+    }
+    
+    @IBAction func goToImageNuke(_ sender: UIButton) {
+        let imageNuke = ImageNukeViewController()
+        navigationController?.pushViewController(imageNuke, animated: true)
+        print("go to image Nuke".capitalized())
     }
 }
 

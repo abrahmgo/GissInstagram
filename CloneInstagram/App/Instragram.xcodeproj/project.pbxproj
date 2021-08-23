@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4BCAB1448A17A4E77729B9A1 /* Pods_Instragram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF48733678AB27624360B33 /* Pods_Instragram.framework */; };
+		A737EAD726D217B50085971E /* BearLottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737EAD626D217B50085971E /* BearLottieViewController.swift */; };
+		A737EAD926D219D20085971E /* bear_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = A737EAD826D219D20085971E /* bear_animation.json */; };
 		A749884026BCD955007F0548 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659164026BA59EB00E4D981 /* LoginViewController.swift */; };
 		A749884226BCD95D007F0548 /* TableViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */; };
 		A749884326BCD960007F0548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163326BA59CE00E4D981 /* Constants.swift */; };
@@ -23,6 +25,8 @@
 		A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FE826BA5960007EF5D9 /* Instragram.xcdatamodeld */; };
 		A749885926BCDA78007F0548 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749885826BCDA78007F0548 /* TableViewController.swift */; };
 		A749885B26BCDAC3007F0548 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A749885A26BCDAC3007F0548 /* TableViewController.xib */; };
+		A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78FDC0426D43CB000750EF1 /* GisselViewController.swift */; };
+		A769174326D45EF40095878A /* ImageNukeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769174226D45EF40095878A /* ImageNukeViewController.swift */; };
 		B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */; };
 		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
@@ -76,9 +80,13 @@
 		0A5B729D2703120DC31A011C /* Pods-Instragram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instragram.debug.xcconfig"; path = "Target Support Files/Pods-Instragram/Pods-Instragram.debug.xcconfig"; sourceTree = "<group>"; };
 		3AB2461B8C8BF74AE9093FD0 /* Pods-Instragram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instragram.release.xcconfig"; path = "Target Support Files/Pods-Instragram/Pods-Instragram.release.xcconfig"; sourceTree = "<group>"; };
 		8FF48733678AB27624360B33 /* Pods_Instragram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instragram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A737EAD626D217B50085971E /* BearLottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearLottieViewController.swift; sourceTree = "<group>"; };
+		A737EAD826D219D20085971E /* bear_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bear_animation.json; sourceTree = "<group>"; };
 		A749885526BCDA09007F0548 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A749885826BCDA78007F0548 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A749885A26BCDAC3007F0548 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		A78FDC0426D43CB000750EF1 /* GisselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisselViewController.swift; sourceTree = "<group>"; };
+		A769174226D45EF40095878A /* ImageNukeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNukeViewController.swift; sourceTree = "<group>"; };
 		B61B1FDC26BA5960007EF5D9 /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instragram.xcdatamodel; sourceTree = "<group>"; };
@@ -268,6 +276,10 @@
 				B659164026BA59EB00E4D981 /* LoginViewController.swift */,
 				B659163F26BA59EB00E4D981 /* LoginViewController.xib */,
 				B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */,
+				A78FDC0426D43CB000750EF1 /* GisselViewController.swift */,
+				A737EAD626D217B50085971E /* BearLottieViewController.swift */,
+				A737EAD826D219D20085971E /* bear_animation.json */,
+				A769174226D45EF40095878A /* ImageNukeViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -429,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A737EAD926D219D20085971E /* bear_animation.json in Resources */,
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
 				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
@@ -502,9 +515,11 @@
 			files = (
 				A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */,
 				A749884D26BCD981007F0548 /* ViewController.swift in Sources */,
+				A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */,
 				B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */,
 				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
+				A737EAD726D217B50085971E /* BearLottieViewController.swift in Sources */,
 				A749884B26BCD977007F0548 /* Circle.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
 				B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */,
@@ -516,6 +531,7 @@
 				A749885926BCDA78007F0548 /* TableViewController.swift in Sources */,
 				A749884426BCD963007F0548 /* Data.swift in Sources */,
 				A749884326BCD960007F0548 /* Constants.swift in Sources */,
+				A769174326D45EF40095878A /* ImageNukeViewController.swift in Sources */,
 				A749884226BCD95D007F0548 /* TableViewController+TableViewDelegate.swift in Sources */,
 				A749884026BCD955007F0548 /* LoginViewController.swift in Sources */,
 			);
