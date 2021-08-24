@@ -33,6 +33,19 @@ class LoginViewController: UIViewController {
             RealmData.shared.read()
         }
     }
+    
+    @IBAction func goToAnimationLottie(_ sender: Any) {
+        let bearAnimation = BearLottieViewController()
+        navigationController?.pushViewController(bearAnimation, animated: true)
+        print("go to animation Bear for Lottie".capitalized())
+    }
+    
+    
+    @IBAction func goToImageNuke(_ sender: Any) {
+        let imageNuke = ImageNukeViewController()
+        navigationController?.pushViewController(imageNuke, animated: true)
+        print("go to image Nuke".capitalized())
+    }
 }
 
 
