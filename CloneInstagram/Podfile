@@ -22,6 +22,7 @@ target 'Instragram' do
   
   networking
   database
+  pod 'lottie-ios'
 end
 
 # framework de components
