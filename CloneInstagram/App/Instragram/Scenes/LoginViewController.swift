@@ -10,6 +10,8 @@ import Utils
 
 class LoginViewController: UIViewController {
 
+    var customCircle: CustomCircleView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,14 @@ class LoginViewController: UIViewController {
         
         // la primera vez que abras la app tienes que mostrar el login, la segunda vez, tienes que mostrar la tabla
         // investigar principios de SOLID
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            let size = CGSize(width: 300, height: 300)
+            let origin = CGPoint(x: 200, y: 200)
+            let frame = CGRect(origin: origin, size: size)
+            let customView = CustomViewView(frame: frame)
+            self.view.addSubview(customView)
+        }
     }
     
     @IBAction func goToNextViewController(_ sender: Any) {
@@ -35,6 +45,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func goToAnimationLottie(_ sender: Any) {
+        let loginUseCaseAndres = LoginUsecase2()
+        getLogin(usecaseType: loginUseCaseAndres)
+        
         let bearAnimation = BearLottieViewController()
         navigationController?.pushViewController(bearAnimation, animated: true)
         print("go to animation Bear for Lottie".capitalized())
@@ -42,9 +55,16 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goToImageNuke(_ sender: Any) {
-        let imageNuke = ImageNukeViewController()
-        navigationController?.pushViewController(imageNuke, animated: true)
+        let loginUseCaseGiss = LoginUsecase()
+        getLogin(usecaseType: loginUseCaseGiss)
+        
+        let tableViewController = TableViewController()
+        navigationController?.pushViewController(tableViewController, animated: true)
         print("go to image Nuke".capitalized())
+    }
+    
+    func getLogin(usecaseType: LoginUsecaseType) {
+        print(usecaseType.execute())
     }
 }
 

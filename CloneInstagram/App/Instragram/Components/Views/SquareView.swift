@@ -1,18 +1,18 @@
 //
-//  CircleView.swift
-//  Components
+//  SquareView.swift
+//  Instragram
 //
-//  Created by Andrés Bonilla Gómez on 29/07/21.
+//  Created by Andrés Bonilla Gómez on 24/08/21.
 //
 
 import UIKit
 
-open class CircleView: UIView {
+open class SquareView: UIView {
     
-    public var radius = 5
+    var radius = 5
     private let perimeter = 20
     
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self.layer.cornerRadius = bounds.width / 2
     }
@@ -21,13 +21,13 @@ open class CircleView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public var color: UIColor = .red {
+    var color: UIColor = .red {
         didSet {
             self.backgroundColor = color
         }
     }
     
-    public func setRadius() {
+    func setRadius() {
         radius += 10
     }
     

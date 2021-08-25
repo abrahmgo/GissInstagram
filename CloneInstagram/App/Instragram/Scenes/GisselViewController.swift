@@ -20,9 +20,9 @@ class GisselViewController: UIViewController {
     }
     
     func addSubviews() {
-        self.view.addSubview(containerView)
-        self.view.addSubview(label)
-        self.view.addSubview(button)
+        view.addSubview(containerView)
+        view.addSubview(label)
+        view.addSubview(button)
     }
     
     lazy var containerView: UIView = {

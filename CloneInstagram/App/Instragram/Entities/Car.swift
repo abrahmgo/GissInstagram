@@ -94,17 +94,6 @@ struct Example {
     }
 }
 
-class CustomCircleView: CircleView {
-    
-    override func changeColor() {
-        if "radius" == "5" {
-            color = .gray
-        } else {
-            color = .red
-        }
-    }
-}
-
 //examples
   //tags
   //tag 1.0.1 //primer clase

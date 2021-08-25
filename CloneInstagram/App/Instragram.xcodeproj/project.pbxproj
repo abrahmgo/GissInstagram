@@ -17,7 +17,7 @@
 		A749884726BCD96B007F0548 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6647B5926BA5ECD001D6361 /* Pet.swift */; };
 		A749884826BCD96E007F0548 /* Men.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163826BA59CE00E4D981 /* Men.swift */; };
 		A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */; };
-		A749884B26BCD977007F0548 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163026BA59C500E4D981 /* Circle.swift */; };
+		A749884B26BCD977007F0548 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659163026BA59C500E4D981 /* CustomCircleView.swift */; };
 		A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */; };
 		A749884D26BCD981007F0548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659164826BA5B7D00E4D981 /* ViewController.swift */; };
 		A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FE826BA5960007EF5D9 /* Instragram.xcdatamodeld */; };
@@ -26,7 +26,6 @@
 		A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78FDC0426D43CB000750EF1 /* GisselViewController.swift */; };
 		A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = A7E2BDA326D475A0004F3903 /* bear_animation.json */; };
 		A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */; };
-		A7E2BDA826D476B8004F3903 /* ImageNukeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2BDA726D476B8004F3903 /* ImageNukeViewController.swift */; };
 		B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */; };
 		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
@@ -38,6 +37,12 @@
 		B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675E08026CF4D24003761A2 /* DefaultLocalData.swift */; };
 		B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B675E08426CF562F003761A2 /* InstagramModel.xcdatamodeld */; };
 		B675E08826CF57A4003761A2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675E08726CF57A4003761A2 /* CoreData.swift */; };
+		B6A5990326D5EE0800D3FA60 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990226D5EE0800D3FA60 /* SquareView.swift */; };
+		B6A5990526D5EE4900D3FA60 /* CustomSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990426D5EE4900D3FA60 /* CustomSquareView.swift */; };
+		B6A5990826D5EF3000D3FA60 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990726D5EF3000D3FA60 /* LoginUseCase.swift */; };
+		B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */; };
+		B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */; };
+		B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */; };
 		B6DD44F826C615680007E2EB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B6DD44F726C615680007E2EB /* Nuke */; };
 		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
 		B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -86,7 +91,6 @@
 		A78FDC0426D43CB000750EF1 /* GisselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisselViewController.swift; sourceTree = "<group>"; };
 		A7E2BDA326D475A0004F3903 /* bear_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bear_animation.json; sourceTree = "<group>"; };
 		A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearLottieViewController.swift; sourceTree = "<group>"; };
-		A7E2BDA726D476B8004F3903 /* ImageNukeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNukeViewController.swift; sourceTree = "<group>"; };
 		B61B1FDC26BA5960007EF5D9 /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instragram.xcdatamodel; sourceTree = "<group>"; };
@@ -100,7 +104,7 @@
 		B61B200426BA5961007EF5D9 /* InstragramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramUITests.swift; sourceTree = "<group>"; };
 		B61B200626BA5961007EF5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61D014C26CF64C600364E4C /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
-		B659163026BA59C500E4D981 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		B659163026BA59C500E4D981 /* CustomCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		B659163326BA59CE00E4D981 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B659163526BA59CE00E4D981 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B659163626BA59CE00E4D981 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -114,6 +118,12 @@
 		B675E08026CF4D24003761A2 /* DefaultLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocalData.swift; sourceTree = "<group>"; };
 		B675E08526CF562F003761A2 /* Persons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Persons.xcdatamodel; sourceTree = "<group>"; };
 		B675E08726CF57A4003761A2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		B6A5990226D5EE0800D3FA60 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		B6A5990426D5EE4900D3FA60 /* CustomSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSquareView.swift; sourceTree = "<group>"; };
+		B6A5990726D5EF3000D3FA60 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNukeViewController.swift; sourceTree = "<group>"; };
+		B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewView.swift; sourceTree = "<group>"; };
+		B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewView.xib; sourceTree = "<group>"; };
 		B6DD451026C617BD0007E2EB /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DF1EBE26BA612100633EAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B6DF1EBF26BA612100633EAB /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -196,6 +206,7 @@
 		B61B1FDE26BA5960007EF5D9 /* Instragram */ = {
 			isa = PBXGroup;
 			children = (
+				B6A5990626D5EF2000D3FA60 /* Usecases */,
 				B675E08326CF55A9003761A2 /* Realm */,
 				B675E08226CF551A003761A2 /* CoreData */,
 				B675E07F26CF4CF8003761A2 /* UserDefaults */,
@@ -243,7 +254,11 @@
 		B659162F26BA59C500E4D981 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B659163026BA59C500E4D981 /* Circle.swift */,
+				B659163026BA59C500E4D981 /* CustomCircleView.swift */,
+				B6A5990226D5EE0800D3FA60 /* SquareView.swift */,
+				B6A5990426D5EE4900D3FA60 /* CustomSquareView.swift */,
+				B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */,
+				B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,8 +293,8 @@
 				B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */,
 				A78FDC0426D43CB000750EF1 /* GisselViewController.swift */,
 				A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */,
+				B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */,
 				A7E2BDA326D475A0004F3903 /* bear_animation.json */,
-				A7E2BDA726D476B8004F3903 /* ImageNukeViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -318,6 +333,14 @@
 				B61D014C26CF64C600364E4C /* RealmData.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		B6A5990626D5EF2000D3FA60 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5990726D5EF3000D3FA60 /* LoginUseCase.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 		B6DF1EC226BA618400633EAB /* Cells */ = {
@@ -442,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */,
+				B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */,
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
 				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
@@ -519,21 +543,25 @@
 				B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */,
 				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
-				A749884B26BCD977007F0548 /* Circle.swift in Sources */,
+				A749884B26BCD977007F0548 /* CustomCircleView.swift in Sources */,
 				A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
 				B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */,
+				B6A5990526D5EE4900D3FA60 /* CustomSquareView.swift in Sources */,
 				A749884826BCD96E007F0548 /* Men.swift in Sources */,
 				A749884726BCD96B007F0548 /* Pet.swift in Sources */,
+				B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */,
+				B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */,
 				A749884626BCD968007F0548 /* Persona.swift in Sources */,
-				A7E2BDA826D476B8004F3903 /* ImageNukeViewController.swift in Sources */,
 				B61D014D26CF64C600364E4C /* RealmData.swift in Sources */,
+				B6A5990326D5EE0800D3FA60 /* SquareView.swift in Sources */,
 				A749884526BCD966007F0548 /* Car.swift in Sources */,
 				A749885926BCDA78007F0548 /* TableViewController.swift in Sources */,
 				A749884426BCD963007F0548 /* Data.swift in Sources */,
 				A749884326BCD960007F0548 /* Constants.swift in Sources */,
 				A749884226BCD95D007F0548 /* TableViewController+TableViewDelegate.swift in Sources */,
 				A749884026BCD955007F0548 /* LoginViewController.swift in Sources */,
+				B6A5990826D5EF3000D3FA60 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
