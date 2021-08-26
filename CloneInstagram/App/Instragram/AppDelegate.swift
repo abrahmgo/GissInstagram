@@ -15,11 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow()
-        let navigationController = UINavigationController(rootViewController: LoginViewController())
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-        
-        return true
+        if !UserDefaults.standard.bool(forKey: "firstView"){
+            UserDefaults.standard.setValue(true, forKey: "firstView")
+            
+            window = UIWindow()
+            let navigationController = UINavigationController(rootViewController: LoginViewController())
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+            
+            return true
+            
+        } else {
+            window = UIWindow()
+            let navigationController = UINavigationController(rootViewController: TableViewController())
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+            
+            return true
+        }
     }
 }
