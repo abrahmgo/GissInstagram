@@ -14,6 +14,7 @@ extension TableViewController: UITableViewDelegate {
         print(indexPath.row)
         print(arrayExample[indexPath.row])
         savePerson()
+        NotificationCenter.default.post(name: Notification.Name("customNotification"), object: nil)
         //codigo para cuando pulses gato, vaya a otra vista
     }
     

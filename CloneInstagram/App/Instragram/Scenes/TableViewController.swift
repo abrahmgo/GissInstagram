@@ -12,6 +12,7 @@ class TableViewController: UIViewController {
     let arrayExample = ["Perro", "Gato", "Conejo"]
     
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,28 @@ class TableViewController: UIViewController {
         //tableView.allowsSelection = false
         //tableView.backgroundColor = .white
         
+        NotificationCenter.default.addObserver(forName: .NSExtensionHostDidEnterBackground,
+                                               object: nil, queue: .main) { _ in
+            print("la app entro en background")
+        }
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(willResignActive),
+                                               name: UIScene.willDeactivateNotification,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(willEnterForeground),
+                                               name: UIScene.willEnterForegroundNotification,
+                                               object: nil)
+    }
+    
+    @objc func willResignActive() {
+        print("entre de background")
+    }
+    
+    @objc func willEnterForeground() {
+        print("regresamos de background")
     }
 }
 
