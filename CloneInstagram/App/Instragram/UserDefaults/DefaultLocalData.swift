@@ -29,6 +29,28 @@ struct DefaultLocalData {
     }
 }
 
+struct UserDefaultForViews {
+    
+    static var defaultsView: UserDefaults? {
+        return UserDefaults(suiteName: "firstView")
+    }
+    
+    enum KeyViews: String {
+        case firstView
+    }
+    
+    static var isFirstView: Bool {
+        set {
+            defaultsView?.set(newValue, forKey: KeyViews.firstView.rawValue)
+            defaultsView?.synchronize()
+        }
+        
+        get {
+            return defaultsView?.value(forKey: KeyViews.firstView.rawValue) as? Bool ?? false
+        }
+    }
+}
+
 // datos sencillos o preferencias
 // Userdefaults
 // datos sensibles (contraseñas, tokens)
