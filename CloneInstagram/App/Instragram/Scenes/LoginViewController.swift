@@ -7,11 +7,16 @@
 
 import UIKit
 import Utils
+import RxSwift
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var txtFieldPassword: UITextField!
     @IBOutlet weak var lblText: UILabel!
     var customCircle: CustomCircleView?
+    let disposeBag = DisposeBag()
+    let pushButton = PublishSubject<String>()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +37,8 @@ class LoginViewController: UIViewController {
 //        }
         
         doSomething()
-        
+        setupBindings()
+        txtFieldPassword.delegate = self
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(customNotification),
                                                name: NSNotification.Name("customNotification"),
@@ -69,12 +75,13 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goToImageNuke(_ sender: Any) {
-        let loginUseCaseGiss = LoginUsecase()
-        getLogin(usecaseType: loginUseCaseGiss)
-        
-        let tableViewController = TableViewController()
-        navigationController?.pushViewController(tableViewController, animated: true)
-        print("go to image Nuke".capitalized())
+//        let loginUseCaseGiss = LoginUsecase()
+//        getLogin(usecaseType: loginUseCaseGiss)
+//
+//        let tableViewController = TableViewController()
+//        navigationController?.pushViewController(tableViewController, animated: true)
+//        print("go to image Nuke".capitalized())
+        pushButton.onNext("pulsaste un buton y emiti el evento")
     }
     
     func getLogin(usecaseType: LoginUsecaseType) {

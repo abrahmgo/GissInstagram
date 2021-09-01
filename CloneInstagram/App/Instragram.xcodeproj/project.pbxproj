@@ -43,6 +43,7 @@
 		B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */; };
 		B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */; };
 		B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */; };
+		B6CFD6B726DF29FC001EA9CA /* LoginViewController+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFD6B626DF29FC001EA9CA /* LoginViewController+Reactive.swift */; };
 		B6DD44F826C615680007E2EB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B6DD44F726C615680007E2EB /* Nuke */; };
 		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
 		B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -124,6 +125,7 @@
 		B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNukeViewController.swift; sourceTree = "<group>"; };
 		B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewView.swift; sourceTree = "<group>"; };
 		B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewView.xib; sourceTree = "<group>"; };
+		B6CFD6B626DF29FC001EA9CA /* LoginViewController+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Reactive.swift"; sourceTree = "<group>"; };
 		B6DD451026C617BD0007E2EB /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DF1EBE26BA612100633EAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B6DF1EBF26BA612100633EAB /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */,
 				B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */,
 				A7E2BDA326D475A0004F3903 /* bear_animation.json */,
+				B6CFD6B626DF29FC001EA9CA /* LoginViewController+Reactive.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
 				A749884B26BCD977007F0548 /* CustomCircleView.swift in Sources */,
+				B6CFD6B726DF29FC001EA9CA /* LoginViewController+Reactive.swift in Sources */,
 				A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
 				B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */,

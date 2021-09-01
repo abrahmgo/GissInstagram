@@ -16,12 +16,18 @@ def database
   pod 'RealmSwift'
 end
 
+def rxswift 
+  pod 'RxSwift'
+  pod 'RxCocoa'
+end
+
 # declarar los targets, los proyectos que haya en mi app
 target 'Instragram' do
   project 'App/Instragram'
   
   networking
   database
+  rxswift
   pod 'lottie-ios'
 end
 
