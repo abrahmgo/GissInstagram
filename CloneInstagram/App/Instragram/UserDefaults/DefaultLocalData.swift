@@ -29,6 +29,28 @@ struct DefaultLocalData {
     }
 }
 
+struct DefaultLocalViews {
+    
+    static var defaultView: UserDefaults? {
+        return UserDefaults(suiteName: "instagram-giss")
+    }
+    
+    enum Keys: String {
+        case firstView
+    }
+    
+    static var isFirstView: Bool {
+        set {
+            defaultView?.set(newValue, forKey: Keys.firstView.rawValue)
+            defaultView?.synchronize()
+        }
+        
+        get {
+            return defaultView?.value(forKey: Keys.firstView.rawValue) as? Bool ?? false
+        }
+    }
+}
+
 // datos sencillos o preferencias
 // Userdefaults
 // datos sensibles (contraseñas, tokens)
