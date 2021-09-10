@@ -26,6 +26,8 @@
 		A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78FDC0426D43CB000750EF1 /* GisselViewController.swift */; };
 		A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = A7E2BDA326D475A0004F3903 /* bear_animation.json */; };
 		A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */; };
+		B6076DA826EAFA7B006101B7 /* APIRandomMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6076DA726EAFA7B006101B7 /* APIRandomMeal.swift */; };
+		B6076DAB26EB0252006101B7 /* APIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6076DAA26EB0252006101B7 /* APIPerson.swift */; };
 		B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */; };
 		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
@@ -43,6 +45,9 @@
 		B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */; };
 		B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */; };
 		B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */; };
+		B6A5B23126E86081003897FA /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5B22F26E86081003897FA /* RequestViewController.swift */; };
+		B6A5B23226E86081003897FA /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A5B23026E86081003897FA /* RequestViewController.xib */; };
+		B6A5B23426E860BA003897FA /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5B23326E860BA003897FA /* RequestHandler.swift */; };
 		B6CFD6B726DF29FC001EA9CA /* LoginViewController+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFD6B626DF29FC001EA9CA /* LoginViewController+Reactive.swift */; };
 		B6DD44F826C615680007E2EB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B6DD44F726C615680007E2EB /* Nuke */; };
 		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
@@ -92,6 +97,8 @@
 		A78FDC0426D43CB000750EF1 /* GisselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisselViewController.swift; sourceTree = "<group>"; };
 		A7E2BDA326D475A0004F3903 /* bear_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bear_animation.json; sourceTree = "<group>"; };
 		A7E2BDA526D475CA004F3903 /* BearLottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearLottieViewController.swift; sourceTree = "<group>"; };
+		B6076DA726EAFA7B006101B7 /* APIRandomMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRandomMeal.swift; sourceTree = "<group>"; };
+		B6076DAA26EB0252006101B7 /* APIPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPerson.swift; sourceTree = "<group>"; };
 		B61B1FDC26BA5960007EF5D9 /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instragram.xcdatamodel; sourceTree = "<group>"; };
@@ -125,6 +132,9 @@
 		B6A5990D26D5F65200D3FA60 /* ImageNukeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNukeViewController.swift; sourceTree = "<group>"; };
 		B6A5990F26D5F9C600D3FA60 /* CustomViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewView.swift; sourceTree = "<group>"; };
 		B6A5991026D5F9C600D3FA60 /* CustomViewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewView.xib; sourceTree = "<group>"; };
+		B6A5B22F26E86081003897FA /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		B6A5B23026E86081003897FA /* RequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		B6A5B23326E860BA003897FA /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		B6CFD6B626DF29FC001EA9CA /* LoginViewController+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Reactive.swift"; sourceTree = "<group>"; };
 		B6DD451026C617BD0007E2EB /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DF1EBE26BA612100633EAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +190,22 @@
 				B6DF1EBF26BA612100633EAB /* TableViewController.xib */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B6076DA626EAFA4E006101B7 /* RequestMeals */ = {
+			isa = PBXGroup;
+			children = (
+				B6076DA726EAFA7B006101B7 /* APIRandomMeal.swift */,
+			);
+			path = RequestMeals;
+			sourceTree = "<group>";
+		};
+		B6076DA926EB0241006101B7 /* RequestPerson */ = {
+			isa = PBXGroup;
+			children = (
+				B6076DAA26EB0252006101B7 /* APIPerson.swift */,
+			);
+			path = RequestPerson;
 			sourceTree = "<group>";
 		};
 		B61B1FD326BA5960007EF5D9 = {
@@ -288,6 +314,7 @@
 		B659163E26BA59DD00E4D981 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6A5B22E26E86069003897FA /* Request */,
 				A749885A26BCDAC3007F0548 /* TableViewController.xib */,
 				A749885826BCDA78007F0548 /* TableViewController.swift */,
 				B659164026BA59EB00E4D981 /* LoginViewController.swift */,
@@ -344,6 +371,18 @@
 				B6A5990726D5EF3000D3FA60 /* LoginUseCase.swift */,
 			);
 			path = Usecases;
+			sourceTree = "<group>";
+		};
+		B6A5B22E26E86069003897FA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B6076DA926EB0241006101B7 /* RequestPerson */,
+				B6076DA626EAFA4E006101B7 /* RequestMeals */,
+				B6A5B22F26E86081003897FA /* RequestViewController.swift */,
+				B6A5B23026E86081003897FA /* RequestViewController.xib */,
+				B6A5B23326E860BA003897FA /* RequestHandler.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		B6DF1EC226BA618400633EAB /* Cells */ = {
@@ -469,6 +508,7 @@
 			files = (
 				A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */,
 				B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */,
+				B6A5B23226E86081003897FA /* RequestViewController.xib in Resources */,
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
 				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
@@ -554,9 +594,13 @@
 				B6A5990526D5EE4900D3FA60 /* CustomSquareView.swift in Sources */,
 				A749884826BCD96E007F0548 /* Men.swift in Sources */,
 				A749884726BCD96B007F0548 /* Pet.swift in Sources */,
+				B6A5B23426E860BA003897FA /* RequestHandler.swift in Sources */,
+				B6A5B23126E86081003897FA /* RequestViewController.swift in Sources */,
 				B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */,
 				B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */,
 				A749884626BCD968007F0548 /* Persona.swift in Sources */,
+				B6076DAB26EB0252006101B7 /* APIPerson.swift in Sources */,
+				B6076DA826EAFA7B006101B7 /* APIRandomMeal.swift in Sources */,
 				B61D014D26CF64C600364E4C /* RealmData.swift in Sources */,
 				B6A5990326D5EE0800D3FA60 /* SquareView.swift in Sources */,
 				A749884526BCD966007F0548 /* Car.swift in Sources */,

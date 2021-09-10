@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             DefaultLocalViews.isFirstView = true
             viewController = LoginViewController()
         } else {
-            viewController = TableViewController()
+            viewController = RequestViewController()
         }
 
         guard let rootViewController = viewController else {
