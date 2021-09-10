@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var txtFieldPassword: UITextField!
     @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var btnLottieRx: UIButton!
     var customCircle: CustomCircleView?
     let disposeBag = DisposeBag()
     let pushButton = PublishSubject<String>()
@@ -64,14 +65,14 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func goToAnimationLottie(_ sender: Any) {
-        let loginUseCaseAndres = LoginUsecase2()
-        getLogin(usecaseType: loginUseCaseAndres)
-        
-        let bearAnimation = BearLottieViewController()
-        navigationController?.pushViewController(bearAnimation, animated: true)
-        print("go to animation Bear for Lottie".capitalized())
-    }
+//    @IBAction func goToAnimationLottie(_ sender: Any) {
+//        let loginUseCaseAndres = LoginUsecase2()
+//        getLogin(usecaseType: loginUseCaseAndres)
+//
+//        let bearAnimation = BearLottieViewController()
+//        navigationController?.pushViewController(bearAnimation, animated: true)
+//        print("go to animation Bear for Lottie".capitalized())
+//    }
     
     
     @IBAction func goToImageNuke(_ sender: Any) {
