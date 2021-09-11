@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Instragram" customModuleProvider="target">
             <connections>
+                <outlet property="btnLottieRx" destination="lvi-21-VPh" id="Sdw-Rb-aYt"/>
                 <outlet property="lblText" destination="8Tk-qo-MOf" id="uz8-Z1-wCG"/>
                 <outlet property="txtFieldPassword" destination="nDI-Ie-mlQ" id="l38-sa-AoG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,9 +40,6 @@
                     <rect key="frame" x="132" y="566" width="151" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Go to animation Lottie"/>
-                    <connections>
-                        <action selector="goToAnimationLottie:" destination="-1" eventType="touchUpInside" id="yax-zA-ys0"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srI-he-qcq">
                     <rect key="frame" x="146" y="651" width="123" height="30"/>

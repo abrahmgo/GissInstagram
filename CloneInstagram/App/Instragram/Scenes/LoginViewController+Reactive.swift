@@ -26,6 +26,11 @@ extension LoginViewController: UITextFieldDelegate {
                 self?.lblText.text = text
                 print(text)
             }).disposed(by: disposeBag)
+        
+        btnLottieRx.rx.tap
+            .subscribe(onNext: { [weak self] screen in
+                self?.present(BearLottieViewController(), animated: true, completion: nil)
+            }).disposed(by: disposeBag)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
