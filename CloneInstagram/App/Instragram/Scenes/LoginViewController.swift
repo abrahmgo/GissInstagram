@@ -21,9 +21,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(DefaultLocalData.isSplash)
+        let person = PersonalData.shared.getPerson()
+        print("llenarias el view \(person)")
+        
+//        print(DefaultLocalData.isSplash)
         // obtienes todas las llaves de tu espacio
-        dump(DefaultLocalData.defaults?.dictionaryRepresentation().keys)
+//        dump(DefaultLocalData.defaults?.dictionaryRepresentation().keys)
         
         // la primera vez que abras la app tienes que mostrar el login, la segunda vez, tienes que mostrar la tabla
         // investigar principios de SOLID
@@ -36,13 +39,13 @@ class LoginViewController: UIViewController {
 //            self.view.addSubview(customView)
 //        }
         
-        doSomething()
-        setupBindings()
-        txtFieldPassword.delegate = self
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(customNotification),
-                                               name: NSNotification.Name("customNotification"),
-                                               object: nil)
+//        doSomething()
+//        setupBindings()
+//        txtFieldPassword.delegate = self
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(customNotification),
+//                                               name: NSNotification.Name("customNotification"),
+//                                               object: nil)
     }
     
     

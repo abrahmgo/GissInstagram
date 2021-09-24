@@ -53,6 +53,14 @@
 		B6DD451126C617BD0007E2EB /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; };
 		B6DD451226C617BD0007E2EB /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6DD451026C617BD0007E2EB /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */; };
+		B6E4CCA626FD6B4800299DC1 /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCA526FD6B4800299DC1 /* PersonalData.swift */; };
+		B6E4CCAA26FD6C4E00299DC1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCA826FD6C4E00299DC1 /* ProfileViewController.swift */; };
+		B6E4CCAB26FD6C4E00299DC1 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E4CCA926FD6C4E00299DC1 /* ProfileViewController.xib */; };
+		B6E4CCAD26FD70FD00299DC1 /* ProfileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCAC26FD70FD00299DC1 /* ProfileUseCase.swift */; };
+		B6E4CCAF26FD735E00299DC1 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCAE26FD735E00299DC1 /* ProfileCoordinator.swift */; };
+		B6E4CCB226FD772100299DC1 /* LogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCB026FD772100299DC1 /* LogoutTableViewCell.swift */; };
+		B6E4CCB326FD772100299DC1 /* LogoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E4CCB126FD772100299DC1 /* LogoutTableViewCell.xib */; };
+		B6E4CCB526FD810000299DC1 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4CCB426FD810000299DC1 /* ProfileFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +150,14 @@
 		B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellTitle.xib; sourceTree = "<group>"; };
 		B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellTitle.swift; sourceTree = "<group>"; };
 		B6DF1EC726BA61A600633EAB /* TableViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		B6E4CCA526FD6B4800299DC1 /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		B6E4CCA826FD6C4E00299DC1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B6E4CCA926FD6C4E00299DC1 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		B6E4CCAC26FD70FD00299DC1 /* ProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUseCase.swift; sourceTree = "<group>"; };
+		B6E4CCAE26FD735E00299DC1 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		B6E4CCB026FD772100299DC1 /* LogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutTableViewCell.swift; sourceTree = "<group>"; };
+		B6E4CCB126FD772100299DC1 /* LogoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutTableViewCell.xib; sourceTree = "<group>"; };
+		B6E4CCB426FD810000299DC1 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +250,7 @@
 		B61B1FDE26BA5960007EF5D9 /* Instragram */ = {
 			isa = PBXGroup;
 			children = (
+				B6E4CCA426FD6B1800299DC1 /* DessignPatterns */,
 				B6A5990626D5EF2000D3FA60 /* Usecases */,
 				B675E08326CF55A9003761A2 /* Realm */,
 				B675E08226CF551A003761A2 /* CoreData */,
@@ -314,6 +331,7 @@
 		B659163E26BA59DD00E4D981 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6E4CCA726FD6C3400299DC1 /* Profile */,
 				B6A5B22E26E86069003897FA /* Request */,
 				A749885A26BCDAC3007F0548 /* TableViewController.xib */,
 				A749885826BCDA78007F0548 /* TableViewController.swift */,
@@ -390,8 +408,30 @@
 			children = (
 				B6DF1EC426BA618C00633EAB /* TableViewCellTitle.swift */,
 				B6DF1EC326BA618C00633EAB /* TableViewCellTitle.xib */,
+				B6E4CCB026FD772100299DC1 /* LogoutTableViewCell.swift */,
+				B6E4CCB126FD772100299DC1 /* LogoutTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B6E4CCA426FD6B1800299DC1 /* DessignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				B6E4CCA526FD6B4800299DC1 /* PersonalData.swift */,
+				B6E4CCAC26FD70FD00299DC1 /* ProfileUseCase.swift */,
+				B6E4CCAE26FD735E00299DC1 /* ProfileCoordinator.swift */,
+				B6E4CCB426FD810000299DC1 /* ProfileFactory.swift */,
+			);
+			path = DessignPatterns;
+			sourceTree = "<group>";
+		};
+		B6E4CCA726FD6C3400299DC1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B6E4CCA826FD6C4E00299DC1 /* ProfileViewController.swift */,
+				B6E4CCA926FD6C4E00299DC1 /* ProfileViewController.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,12 +546,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E4CCAB26FD6C4E00299DC1 /* ProfileViewController.xib in Resources */,
 				A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */,
 				B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */,
 				B6A5B23226E86081003897FA /* RequestViewController.xib in Resources */,
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
 				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
+				B6E4CCB326FD772100299DC1 /* LogoutTableViewCell.xib in Resources */,
 				A749885B26BCDAC3007F0548 /* TableViewController.xib in Resources */,
 				B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */,
 			);
@@ -584,8 +626,10 @@
 				A749884D26BCD981007F0548 /* ViewController.swift in Sources */,
 				A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */,
 				B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */,
+				B6E4CCAF26FD735E00299DC1 /* ProfileCoordinator.swift in Sources */,
 				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
+				B6E4CCAA26FD6C4E00299DC1 /* ProfileViewController.swift in Sources */,
 				A749884B26BCD977007F0548 /* CustomCircleView.swift in Sources */,
 				B6CFD6B726DF29FC001EA9CA /* LoginViewController+Reactive.swift in Sources */,
 				A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */,
@@ -599,10 +643,14 @@
 				B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */,
 				B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */,
 				A749884626BCD968007F0548 /* Persona.swift in Sources */,
+				B6E4CCB226FD772100299DC1 /* LogoutTableViewCell.swift in Sources */,
+				B6E4CCAD26FD70FD00299DC1 /* ProfileUseCase.swift in Sources */,
 				B6076DAB26EB0252006101B7 /* APIPerson.swift in Sources */,
 				B6076DA826EAFA7B006101B7 /* APIRandomMeal.swift in Sources */,
+				B6E4CCA626FD6B4800299DC1 /* PersonalData.swift in Sources */,
 				B61D014D26CF64C600364E4C /* RealmData.swift in Sources */,
 				B6A5990326D5EE0800D3FA60 /* SquareView.swift in Sources */,
+				B6E4CCB526FD810000299DC1 /* ProfileFactory.swift in Sources */,
 				A749884526BCD966007F0548 /* Car.swift in Sources */,
 				A749885926BCDA78007F0548 /* TableViewController.swift in Sources */,
 				A749884426BCD963007F0548 /* Data.swift in Sources */,
