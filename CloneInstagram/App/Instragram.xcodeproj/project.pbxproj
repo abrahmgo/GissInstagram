@@ -29,10 +29,26 @@
 		B6076DA826EAFA7B006101B7 /* APIRandomMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6076DA726EAFA7B006101B7 /* APIRandomMeal.swift */; };
 		B6076DAB26EB0252006101B7 /* APIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6076DAA26EB0252006101B7 /* APIPerson.swift */; };
 		B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */; };
-		B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */; };
 		B61B1FFA26BA5961007EF5D9 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */; };
 		B61B200526BA5961007EF5D9 /* InstragramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B200426BA5961007EF5D9 /* InstragramUITests.swift */; };
 		B61D014D26CF64C600364E4C /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D014C26CF64C600364E4C /* RealmData.swift */; };
+		B6250EA5270D4B4D006E90DF /* LoginViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250E99270D4B4D006E90DF /* LoginViperViewController.swift */; };
+		B6250EA6270D4B4D006E90DF /* LoginViperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6250E9A270D4B4D006E90DF /* LoginViperViewController.xib */; };
+		B6250EA7270D4B4D006E90DF /* LoginViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250E9C270D4B4D006E90DF /* LoginViperRouter.swift */; };
+		B6250EA8270D4B4D006E90DF /* LoginViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250E9E270D4B4D006E90DF /* LoginViperPresenter.swift */; };
+		B6250EA9270D4B4D006E90DF /* LoginViperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250E9F270D4B4D006E90DF /* LoginViperFactory.swift */; };
+		B6250EAA270D4B4D006E90DF /* LoginViperFactory+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EA0270D4B4D006E90DF /* LoginViperFactory+Dependencies.swift */; };
+		B6250EAB270D4B4D006E90DF /* LoginViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EA2270D4B4D006E90DF /* LoginViperInteractor.swift */; };
+		B6250EAC270D4B4D006E90DF /* LoginViperEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EA4270D4B4D006E90DF /* LoginViperEntity.swift */; };
+		B6250EB5270D5378006E90DF /* LoginCleanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EAE270D5378006E90DF /* LoginCleanCoordinator.swift */; };
+		B6250EB6270D5378006E90DF /* LoginCleanFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EAF270D5378006E90DF /* LoginCleanFactory.swift */; };
+		B6250EB7270D5378006E90DF /* LoginCleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EB0270D5378006E90DF /* LoginCleanViewController.swift */; };
+		B6250EB8270D5378006E90DF /* LoginCleanViewModel+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EB1270D5378006E90DF /* LoginCleanViewModel+Dependencies.swift */; };
+		B6250EB9270D5378006E90DF /* LoginCleanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6250EB2270D5378006E90DF /* LoginCleanViewModel.swift */; };
+		B6250EBA270D5378006E90DF /* LoginCleanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6250EB3270D5378006E90DF /* LoginCleanViewController.xib */; };
+		B6250EBF270D5B3D006E90DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6250EBE270D5B3D006E90DF /* LaunchScreen.storyboard */; };
+		B6250EC4270D5C09006E90DF /* Idiom.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6250EC6270D5C09006E90DF /* Idiom.strings */; };
+		B6250EC7270D5C18006E90DF /* Idiom.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6250EC9270D5C18006E90DF /* Idiom.strings */; };
 		B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B659163F26BA59EB00E4D981 /* LoginViewController.xib */; };
 		B659164526BA5AE500E4D981 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; };
 		B659164626BA5AE500E4D981 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B659164426BA5AE500E4D981 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -111,7 +127,6 @@
 		B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61B1FE926BA5960007EF5D9 /* Instragram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instragram.xcdatamodel; sourceTree = "<group>"; };
 		B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B61B1FEE26BA5961007EF5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61B1FF026BA5961007EF5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61B1FF526BA5961007EF5D9 /* InstragramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstragramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61B1FF926BA5961007EF5D9 /* InstragramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramTests.swift; sourceTree = "<group>"; };
@@ -120,6 +135,23 @@
 		B61B200426BA5961007EF5D9 /* InstragramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramUITests.swift; sourceTree = "<group>"; };
 		B61B200626BA5961007EF5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61D014C26CF64C600364E4C /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		B6250E99270D4B4D006E90DF /* LoginViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperViewController.swift; sourceTree = "<group>"; };
+		B6250E9A270D4B4D006E90DF /* LoginViperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViperViewController.xib; sourceTree = "<group>"; };
+		B6250E9C270D4B4D006E90DF /* LoginViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperRouter.swift; sourceTree = "<group>"; };
+		B6250E9E270D4B4D006E90DF /* LoginViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperPresenter.swift; sourceTree = "<group>"; };
+		B6250E9F270D4B4D006E90DF /* LoginViperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperFactory.swift; sourceTree = "<group>"; };
+		B6250EA0270D4B4D006E90DF /* LoginViperFactory+Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginViperFactory+Dependencies.swift"; sourceTree = "<group>"; };
+		B6250EA2270D4B4D006E90DF /* LoginViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperInteractor.swift; sourceTree = "<group>"; };
+		B6250EA4270D4B4D006E90DF /* LoginViperEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViperEntity.swift; sourceTree = "<group>"; };
+		B6250EAE270D5378006E90DF /* LoginCleanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCleanCoordinator.swift; sourceTree = "<group>"; };
+		B6250EAF270D5378006E90DF /* LoginCleanFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCleanFactory.swift; sourceTree = "<group>"; };
+		B6250EB0270D5378006E90DF /* LoginCleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCleanViewController.swift; sourceTree = "<group>"; };
+		B6250EB1270D5378006E90DF /* LoginCleanViewModel+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginCleanViewModel+Dependencies.swift"; sourceTree = "<group>"; };
+		B6250EB2270D5378006E90DF /* LoginCleanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCleanViewModel.swift; sourceTree = "<group>"; };
+		B6250EB3270D5378006E90DF /* LoginCleanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCleanViewController.xib; sourceTree = "<group>"; };
+		B6250EBE270D5B3D006E90DF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6250EC5270D5C09006E90DF /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Idiom.strings"; sourceTree = "<group>"; };
+		B6250EC8270D5C18006E90DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Idiom.strings; sourceTree = "<group>"; };
 		B659163026BA59C500E4D981 /* CustomCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		B659163326BA59CE00E4D981 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B659163526BA59CE00E4D981 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -250,6 +282,7 @@
 		B61B1FDE26BA5960007EF5D9 /* Instragram */ = {
 			isa = PBXGroup;
 			children = (
+				B6250EBC270D5A06006E90DF /* Localized */,
 				B6E4CCA426FD6B1800299DC1 /* DessignPatterns */,
 				B6A5990626D5EF2000D3FA60 /* Usecases */,
 				B675E08326CF55A9003761A2 /* Realm */,
@@ -262,9 +295,9 @@
 				B61B1FDF26BA5960007EF5D9 /* AppDelegate.swift */,
 				B659164826BA5B7D00E4D981 /* ViewController.swift */,
 				B61B1FEB26BA5961007EF5D9 /* Assets.xcassets */,
-				B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */,
 				B61B1FF026BA5961007EF5D9 /* Info.plist */,
 				B61B1FE826BA5960007EF5D9 /* Instragram.xcdatamodeld */,
+				B6250EBE270D5B3D006E90DF /* LaunchScreen.storyboard */,
 			);
 			path = Instragram;
 			sourceTree = "<group>";
@@ -285,6 +318,107 @@
 				B61B200626BA5961007EF5D9 /* Info.plist */,
 			);
 			path = InstragramUITests;
+			sourceTree = "<group>";
+		};
+		B6250E91270D49C9006E90DF /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				B6250E97270D4B4D006E90DF /* LoginViper */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		B6250E97270D4B4D006E90DF /* LoginViper */ = {
+			isa = PBXGroup;
+			children = (
+				B6250E98270D4B4D006E90DF /* LoginViperViewController */,
+				B6250E9B270D4B4D006E90DF /* LoginViperRouter */,
+				B6250E9D270D4B4D006E90DF /* LoginViperPresenter */,
+				B6250E9F270D4B4D006E90DF /* LoginViperFactory.swift */,
+				B6250EA0270D4B4D006E90DF /* LoginViperFactory+Dependencies.swift */,
+				B6250EA1270D4B4D006E90DF /* LoginViperInteractor */,
+				B6250EA3270D4B4D006E90DF /* LoginViperEntity */,
+			);
+			path = LoginViper;
+			sourceTree = "<group>";
+		};
+		B6250E98270D4B4D006E90DF /* LoginViperViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6250E99270D4B4D006E90DF /* LoginViperViewController.swift */,
+				B6250E9A270D4B4D006E90DF /* LoginViperViewController.xib */,
+			);
+			path = LoginViperViewController;
+			sourceTree = "<group>";
+		};
+		B6250E9B270D4B4D006E90DF /* LoginViperRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B6250E9C270D4B4D006E90DF /* LoginViperRouter.swift */,
+			);
+			path = LoginViperRouter;
+			sourceTree = "<group>";
+		};
+		B6250E9D270D4B4D006E90DF /* LoginViperPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				B6250E9E270D4B4D006E90DF /* LoginViperPresenter.swift */,
+			);
+			path = LoginViperPresenter;
+			sourceTree = "<group>";
+		};
+		B6250EA1270D4B4D006E90DF /* LoginViperInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				B6250EA2270D4B4D006E90DF /* LoginViperInteractor.swift */,
+			);
+			path = LoginViperInteractor;
+			sourceTree = "<group>";
+		};
+		B6250EA3270D4B4D006E90DF /* LoginViperEntity */ = {
+			isa = PBXGroup;
+			children = (
+				B6250EA4270D4B4D006E90DF /* LoginViperEntity.swift */,
+			);
+			path = LoginViperEntity;
+			sourceTree = "<group>";
+		};
+		B6250EAD270D5311006E90DF /* Clean */ = {
+			isa = PBXGroup;
+			children = (
+				B6250EAE270D5378006E90DF /* LoginCleanCoordinator.swift */,
+				B6250EAF270D5378006E90DF /* LoginCleanFactory.swift */,
+				B6250EB0270D5378006E90DF /* LoginCleanViewController.swift */,
+				B6250EB1270D5378006E90DF /* LoginCleanViewModel+Dependencies.swift */,
+				B6250EB2270D5378006E90DF /* LoginCleanViewModel.swift */,
+				B6250EB3270D5378006E90DF /* LoginCleanViewController.xib */,
+			);
+			path = Clean;
+			sourceTree = "<group>";
+		};
+		B6250EBC270D5A06006E90DF /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				B6250ECB270D5E0B006E90DF /* English-US */,
+				B6250ECA270D5E01006E90DF /* Spanish-MX */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		B6250ECA270D5E01006E90DF /* Spanish-MX */ = {
+			isa = PBXGroup;
+			children = (
+				B6250EC6270D5C09006E90DF /* Idiom.strings */,
+			);
+			path = "Spanish-MX";
+			sourceTree = "<group>";
+		};
+		B6250ECB270D5E0B006E90DF /* English-US */ = {
+			isa = PBXGroup;
+			children = (
+				B6250EC9270D5C18006E90DF /* Idiom.strings */,
+			);
+			path = "English-US";
 			sourceTree = "<group>";
 		};
 		B659162E26BA59C500E4D981 /* Components */ = {
@@ -331,6 +465,8 @@
 		B659163E26BA59DD00E4D981 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6250EAD270D5311006E90DF /* Clean */,
+				B6250E91270D49C9006E90DF /* Viper */,
 				B6E4CCA726FD6C3400299DC1 /* Profile */,
 				B6A5B22E26E86069003897FA /* Request */,
 				A749885A26BCDAC3007F0548 /* TableViewController.xib */,
@@ -525,6 +661,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-MX",
 			);
 			mainGroup = B61B1FD326BA5960007EF5D9;
 			packageReferences = (
@@ -546,14 +683,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6250EC4270D5C09006E90DF /* Idiom.strings in Resources */,
 				B6E4CCAB26FD6C4E00299DC1 /* ProfileViewController.xib in Resources */,
 				A7E2BDA426D475A0004F3903 /* bear_animation.json in Resources */,
 				B6A5991226D5F9C600D3FA60 /* CustomViewView.xib in Resources */,
 				B6A5B23226E86081003897FA /* RequestViewController.xib in Resources */,
 				B659164126BA59EB00E4D981 /* LoginViewController.xib in Resources */,
-				B61B1FEF26BA5961007EF5D9 /* LaunchScreen.storyboard in Resources */,
+				B6250EA6270D4B4D006E90DF /* LoginViperViewController.xib in Resources */,
 				B61B1FEC26BA5961007EF5D9 /* Assets.xcassets in Resources */,
+				B6250EBA270D5378006E90DF /* LoginCleanViewController.xib in Resources */,
 				B6E4CCB326FD772100299DC1 /* LogoutTableViewCell.xib in Resources */,
+				B6250EBF270D5B3D006E90DF /* LaunchScreen.storyboard in Resources */,
+				B6250EC7270D5C18006E90DF /* Idiom.strings in Resources */,
 				A749885B26BCDAC3007F0548 /* TableViewController.xib in Resources */,
 				B6DF1EC526BA618C00633EAB /* TableViewCellTitle.xib in Resources */,
 			);
@@ -623,31 +764,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				A749885026BCD98C007F0548 /* Instragram.xcdatamodeld in Sources */,
+				B6250EA9270D4B4D006E90DF /* LoginViperFactory.swift in Sources */,
 				A749884D26BCD981007F0548 /* ViewController.swift in Sources */,
 				A78FDC0526D43CB000750EF1 /* GisselViewController.swift in Sources */,
 				B675E08126CF4D24003761A2 /* DefaultLocalData.swift in Sources */,
 				B6E4CCAF26FD735E00299DC1 /* ProfileCoordinator.swift in Sources */,
+				B6250EB6270D5378006E90DF /* LoginCleanFactory.swift in Sources */,
+				B6250EAC270D4B4D006E90DF /* LoginViperEntity.swift in Sources */,
 				B675E08826CF57A4003761A2 /* CoreData.swift in Sources */,
 				A749884C26BCD97B007F0548 /* AppDelegate.swift in Sources */,
+				B6250EA7270D4B4D006E90DF /* LoginViperRouter.swift in Sources */,
 				B6E4CCAA26FD6C4E00299DC1 /* ProfileViewController.swift in Sources */,
 				A749884B26BCD977007F0548 /* CustomCircleView.swift in Sources */,
+				B6250EAA270D4B4D006E90DF /* LoginViperFactory+Dependencies.swift in Sources */,
 				B6CFD6B726DF29FC001EA9CA /* LoginViewController+Reactive.swift in Sources */,
 				A7E2BDA626D475CA004F3903 /* BearLottieViewController.swift in Sources */,
 				A749884926BCD971007F0548 /* TableViewCellTitle.swift in Sources */,
 				B675E08626CF562F003761A2 /* InstagramModel.xcdatamodeld in Sources */,
+				B6250EB7270D5378006E90DF /* LoginCleanViewController.swift in Sources */,
 				B6A5990526D5EE4900D3FA60 /* CustomSquareView.swift in Sources */,
+				B6250EB5270D5378006E90DF /* LoginCleanCoordinator.swift in Sources */,
 				A749884826BCD96E007F0548 /* Men.swift in Sources */,
 				A749884726BCD96B007F0548 /* Pet.swift in Sources */,
 				B6A5B23426E860BA003897FA /* RequestHandler.swift in Sources */,
 				B6A5B23126E86081003897FA /* RequestViewController.swift in Sources */,
 				B6A5990E26D5F65200D3FA60 /* ImageNukeViewController.swift in Sources */,
 				B6A5991126D5F9C600D3FA60 /* CustomViewView.swift in Sources */,
+				B6250EAB270D4B4D006E90DF /* LoginViperInteractor.swift in Sources */,
+				B6250EA5270D4B4D006E90DF /* LoginViperViewController.swift in Sources */,
 				A749884626BCD968007F0548 /* Persona.swift in Sources */,
 				B6E4CCB226FD772100299DC1 /* LogoutTableViewCell.swift in Sources */,
 				B6E4CCAD26FD70FD00299DC1 /* ProfileUseCase.swift in Sources */,
 				B6076DAB26EB0252006101B7 /* APIPerson.swift in Sources */,
 				B6076DA826EAFA7B006101B7 /* APIRandomMeal.swift in Sources */,
 				B6E4CCA626FD6B4800299DC1 /* PersonalData.swift in Sources */,
+				B6250EA8270D4B4D006E90DF /* LoginViperPresenter.swift in Sources */,
 				B61D014D26CF64C600364E4C /* RealmData.swift in Sources */,
 				B6A5990326D5EE0800D3FA60 /* SquareView.swift in Sources */,
 				B6E4CCB526FD810000299DC1 /* ProfileFactory.swift in Sources */,
@@ -656,8 +807,10 @@
 				A749884426BCD963007F0548 /* Data.swift in Sources */,
 				A749884326BCD960007F0548 /* Constants.swift in Sources */,
 				A749884226BCD95D007F0548 /* TableViewController+TableViewDelegate.swift in Sources */,
+				B6250EB9270D5378006E90DF /* LoginCleanViewModel.swift in Sources */,
 				A749884026BCD955007F0548 /* LoginViewController.swift in Sources */,
 				B6A5990826D5EF3000D3FA60 /* LoginUseCase.swift in Sources */,
+				B6250EB8270D5378006E90DF /* LoginCleanViewModel+Dependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,12 +846,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B61B1FED26BA5961007EF5D9 /* LaunchScreen.storyboard */ = {
+		B6250EC6270D5C09006E90DF /* Idiom.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B61B1FEE26BA5961007EF5D9 /* Base */,
+				B6250EC5270D5C09006E90DF /* es-MX */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Idiom.strings;
+			sourceTree = "<group>";
+		};
+		B6250EC9270D5C18006E90DF /* Idiom.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6250EC8270D5C18006E90DF /* en */,
+			);
+			name = Idiom.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -708,6 +869,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -769,6 +931,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
