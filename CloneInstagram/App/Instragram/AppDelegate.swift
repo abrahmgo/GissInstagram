@@ -15,23 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        var viewController: UIViewController?
+//        var viewController: UIViewController?
         
-        if !DefaultLocalViews.isFirstView {
-            DefaultLocalViews.isFirstView = true
-            viewController = LoginViewController()
-        } else {
-            viewController = RequestViewController()
-        }
-
-        guard let rootViewController = viewController else {
-            return false
-        }
+//        if !DefaultLocalViews.isFirstView {
+//            DefaultLocalViews.isFirstView = true
+//            viewController = LoginViewController()
+//        } else {
+//            viewController = ProfileFactory.build()
+//        }
+//
+//        guard let rootViewController = viewController else {
+//            return false
+//        }
         
         window = UIWindow()
-        let navigationController = UINavigationController(rootViewController: rootViewController)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+//        let loginViper = LoginViperFactory.build()
+        LoginCleanCoordinator().start()
         
         return true
     }
