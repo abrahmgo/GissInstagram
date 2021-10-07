@@ -656,10 +656,11 @@
 			};
 			buildConfigurationList = B61B1FD726BA5960007EF5D9 /* Build configuration list for PBXProject "Instragram" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 				Base,
 				"es-MX",
 			);
