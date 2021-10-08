@@ -7,7 +7,6 @@
 
 import Foundation
 import RealmSwift
-import RxSwift
 
 class Furniture: Object {
     @objc dynamic var name = ""
@@ -38,14 +37,8 @@ class RealmData {
     
     static let shared = RealmData()
     
-    lazy var realm: Realm? = {
-//        return try! Realm(configuration: .defaultConfiguration)
-        do {
-            let realm = try Realm(configuration: .defaultConfiguration)
-            return realm
-        } catch {
-            return nil
-        }
+    lazy var realm: Realm = {
+        return try! Realm(configuration: .defaultConfiguration)
     }()
     
     func write() {
@@ -56,34 +49,16 @@ class RealmData {
         
         // Write to Realm
         print("Write to Realm")
-        
-        guard let realm = realm else {
-            return
+        try! realm.write {
+            realm.add(table)
+            realm.add(chair)
+            realm.add(store)
         }
-        
-        do {
-            try realm.write({
-                realm.add(table)
-                realm.add(chair)
-                realm.add(store)
-            })
-        } catch {
-            realm.invalidate()
-        }
-        
-//        try! realm.write {
-//            realm.add(table)
-//            realm.add(chair)
-//            realm.add(store)
-//        }
     }
     
     func read() {
         // Read from Realm
         print("Read from Realm")
-        guard let realm = realm else {
-            return
-        }
         let data = realm.objects(Store.self)
         print(data)
     }
